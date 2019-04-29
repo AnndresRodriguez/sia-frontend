@@ -1,19 +1,27 @@
 <template>
     <div>
       <sidebar-Alumno></sidebar-Alumno>
-      <dashboard-alumno></dashboard-alumno>
+      <div class="main-content" style="margin-left:250px"> 
+      <navbarsia></navbarsia>
+      
+      
+      
+         <router-view></router-view>
+      </div>
+      
     </div>
 </template>
 
 <script>
 
 import sidebarAlumno from '../components/Alumno/Sidebar.vue'
-import dashboardAlumno from '../components/Alumno/Dashboard.vue'
+import navbarsia from '../components/Alumno/Navbar.vue'
+
 export default {
 
     components: {
         sidebarAlumno,
-        dashboardAlumno
+        navbarsia
     }
 
 }
